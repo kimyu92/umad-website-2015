@@ -1,0 +1,19 @@
+windowsphone:
+  name: Windows Phone Store
+  url: "//www.windowsphone.com/s?appid=40f88ecc-dcf0-44ff-8deb-a88e5fc0d77b"
+
+ios:
+  name: App Store
+  url: "//itunes.apple.com/us/app/umad-university-of-mad/id964728751?mt=8&uo=4"
+
+android:
+  name: Play Store
+  url: "//play.google.com/store/apps/details?id=com.utcs.mad.umad"
+
+twitter:
+  name: "@utcsmad"
+  url: "//twitter.com/utcsmad"
+
+madwebsite:
+  name: MAD website
+  url: "//cs.utexas.edu/users/mad"

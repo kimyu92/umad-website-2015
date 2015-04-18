@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/umad-logo/red.png" />
+
+    <!-- TODO add meta tags for search engines -->
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "uMAD | Student Developer Conference | Feb 21, 2015" %></title>
+    
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>

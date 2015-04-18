@@ -1,0 +1,186 @@
+/* Mixns */
+
+@mixin transition($prop) {
+  -webkit-transition: $prop;
+  -moz-transition: $prop;
+  -o-transition: $prop;
+  -ms-transition: $prop;
+  transition: $prop;
+}
+
+@mixin transition($prop1, $prop2) {
+  -webkit-transition: $prop1, $prop2;
+  -moz-transition: $prop1, $prop2;
+  -o-transition: $prop1, $prop2;
+  -ms-transition: $prop1, $prop2;
+  transition: $prop1, $prop2;
+}
+
+/* Typography helpers */
+
+.upcase {
+  text-transform: uppercase;
+}
+
+/* Metal */
+
+* { 
+  margin: 0;
+  padding: 0px;
+  font-family: $main-fonts;
+  letter-spacing: 0.3px;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+} 
+
+html, body {
+  height: 100%;
+  font-size: $base-font-size;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* HTML tags */
+
+body { 
+  background: $background-white; 
+  margin: 0; 
+  color: $base-white;
+  font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: $base-white;
+}
+
+p { 
+  padding: 0; 
+  font-weight: 400;
+  font-size: 1rem; 
+  line-height: $default-line-height-1;
+}
+
+/* Anchor tag + effects */
+
+a { 
+  padding: 0;
+  margin: 0;
+  text-decoration: none; 
+  @include transition(background-color .2s ease-out, color .2s ease-out);
+  color: $base-white;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+hr {
+  border: 1px solid #5a5a5a;
+  width: 5rem;
+}
+
+/* Custom element styles */
+
+.btn {
+  display: inline-block; // only as long as contents + padding
+  padding: 0;
+}
+.btn-large {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  line-height: $default-line-height-1;
+  text-align: center;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-image: none;
+  border: 1px solid $base-white;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  
+  font-weight: 900;
+}
+.btn-upcase {
+  text-transform: uppercase;
+}
+.btn-clear {
+  background: transparent;
+  color: $base-white !important;
+}
+.btn:hover {
+  background: $base-white;
+  color: $madlabs-red-dark;
+}
+.btn:active, .btn:focus {
+  color: $base-white !important;
+}
+
+/* Alignment helpers */
+
+.centered { 
+  text-align: center
+}
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width:100%;
+}
+
+.wyswig {
+  text-transform: none !important;
+}
+
+.disabled-click-temp {
+  cursor: default;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+body.overflow-hidden {
+  /* used when modal is visible */
+  overflow: hidden;
+}
+
+/* Main Components  */
+
+header {
+  position: relative;
+  height: 160px;
+  line-height: 160px;
+}
+header h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1170px) {
+  header {
+    height: 240px;
+    line-height: 240px;
+  }
+  header h1 {
+    font-size: 3.2rem;
+    font-weight: 300;
+  }
+}
+
+@import "schedule-modal";

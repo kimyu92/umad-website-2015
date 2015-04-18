@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+  html {
+    zoom: 100%;
+  }
+  .div-heading {
+    font-size: $heading-font-size;
+  }
+  .sm-centered {
+    clear:both;
+  }
+  .mobile-display {
+    display: block !important;
+  }
+  .desktop-display {
+    display: none !important;
+  }
+  .container {
+      padding: calc(3rem) calc(1.5rem) !important;
+  }
+  #faq {
+    .container {
+        padding: calc(3rem) calc(1.5rem) !important;
+    }
+    h5 {
+      margin-top: 0rem;
+      margin-bottom: 0.15rem;
+    }
+    /* Specific adjustments, not scales */
+    .question {
+      font-size: 1.2rem;
+    }
+    .answer {
+      font-size: 1.1rem;
+    }
+    .qas-s {
+      margin-top: 1rem;
+    }
+    .qas {
+      margin: 2rem 0;
+    }
+    .qas-middle-e {
+      margin-top: 1rem;
+    }
+    .qas-middle-s {
+      margin-bottom: 1rem;
+    }
+    .qas-e {
+      margin-bottom: 1rem;
+    }
+  }
+  .icon-info-container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 15px;
+  } 
+  .container {
+      padding: calc(3rem) calc(1.5rem) !important;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+  #footer {
+    .container {
+      padding: calc(4rem * 0.5) (2.5rem*0.5);
+    }
+    .text {
+      margin-bottom: 0.75rem;
+    }
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+  #hero {
+    .punchline {
+      &.first {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      &.major {
+        font-size: $heading-font-size;
+      }
+    }
+  }
+  .icon-info-container {
+      i.icon {
+        font-size: 5.5rem;
+      }
+  }
+
+  #schedule {
+    .filter-container  {
+      a {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        &:hover {
+        }
+      }
+    }
+  } 
+}

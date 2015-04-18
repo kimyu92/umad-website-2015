@@ -1,0 +1,93 @@
+<!-- MAIN LANDING HERO -->
+<div id="hero" class="cd-section">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-8 col-lg-offset-2 col-sm-12 centered">
+                <a href="/"><img src="/images/umad-logo/white.png" class="img-responsive" id="umad-logo"></a>
+            </div>
+        </div>
+        
+        <div class="row centered punchline major">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 centered">
+                <div class="heading-font">University of MAD</div>
+            </div>
+        </div>
+        
+        <div class="row centered punchline first slideUp0">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 centered">
+                <div class="text">The Annual Student Developer Conference.</div>
+            </div>
+        </div>
+        
+        <div class="row centered punchline end slideUp0">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 centered">
+                <div class="text">February 21, 2015.</div>
+            </div>
+        </div>
+        
+        <div class="row centered">
+            <div class="cd-modal-action">
+                <a href="#" class="btn" data-type="modal-trigger" id="schedule-button">See Schedule</a>
+                <span class="cd-modal-bg"></span>
+            </div>
+        </div>
+        
+        <div class="cd-modal">
+            <div class="cd-modal-content" id="schedule">
+                <div class="container">
+                    <div class="row centered heading">
+                        <div class="col-md-8 col-md-offset-2 centered">
+                            <div class="centered div-heading"><span class="wyswig">uMAD</span> 2015 Schedule</div>
+                        </div>
+                    </div>
+                    <div class="row centered">
+                        <div class="col-md-6 col-md-offset-3 col-sm-10 centered">
+                            <div class="filter-container">
+                                <a id="all" class="active-filter-header">All</a>
+                                <a id="android" class="wider-md">Android</a>
+                                <a id="ios">iOS</a>
+                                <a id="web">Web</a>
+                                <a id="wics">WiCS</a>
+                                <a id="mad">MAD</a>
+                                <a id="other" class="wider-sm">Other</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <% data.events.results.each do |e| %>
+                    <div class="row schedule-row all <% e.topicTags.each { |t| %> <%= t.downcase %> <%}%>">
+                        <div class="col-md-6 col-md-offset-3 event-container">
+                            
+                            <h5 class="title">
+                               <%= e.name %>
+                            </h5>
+
+                            <div class="speaker">
+                                <%= e.speaker %>
+                                <% if e.company %>
+                                    &nbsp;&nbsp;&middot;&nbsp;&nbsp; <%= e.company.name %>
+                                <% end %>
+                            </div>
+
+                            <div class="times">
+                                <span class="start-end">
+                                    start - end
+                                </span>
+                                &nbsp;&nbsp;&middot;&nbsp;&nbsp; <%= e.room %>
+                            </div>
+
+                            <div class="description">
+                                <%= e.descriptionText %>
+                            </div>
+
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#0" class="cd-modal-close">X</a>
+    </div>
+</div>
+<!-- END MAIN LANDING HERO -->

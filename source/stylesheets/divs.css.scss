@@ -1,0 +1,405 @@
+/* Mixins */
+
+@mixin level-sponsors($image-height) {
+  height: $image-height;
+  display: table-cell;
+  margin: 1rem 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  img {
+    max-height: $image-height;
+    max-width: 100%;
+    height: auto; 
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin common-div($content-color) {
+  height: auto;
+  width: 100%;
+  
+  background-attachment: relative;
+  background-position: center center;
+  background-color: $background-white;
+  
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+  .container {
+    padding: 4rem 4rem;
+  }
+  
+  * {
+    color: $content-color;
+  }
+}
+
+@mixin expl-p() {
+  padding: 0;
+  margin: 1rem 0;
+  font-family: $text-fonts;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: $default-line-height-2;
+}
+
+.div-heading {
+  font-size: $heading-font-size + 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+/* Hero */
+
+#hero {
+  @include common-div($base-white);
+  background-image: url(../images/hero/hero-3-compressor.jpg);
+  #hero-button {
+    .btn {
+      padding: 0.55rem 1.5rem;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    right: 0;
+    left: 0;
+    z-index: 2;
+  
+    margin: auto;
+    max-width: 700px;
+    
+    text-align: center;
+  }
+  #umad-logo { 
+    height: $hero-logo-size;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .punchline {
+    line-height: $default-line-height-3;
+    font-size: 1.1rem;
+    .heading-font {
+      font-family: "Montserrat", Arial,sans-serif;
+    }
+    .text {
+      line-height: $default-line-height-3;
+      font-size: 1.1em;
+      line-height: 1.55;
+      font-weight: 400;
+    }
+    text-transform: none;
+    &.first {
+      margin-top: 1rem;
+    }
+    &.end {
+      margin-bottom: 2rem;
+    }
+    &.major {
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+      font-size: $heading-font-size + 0.5rem;
+      font-weight: 900;
+      line-height: $default-line-height-0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* FAQ */
+
+#faq {
+  @include common-div($medium-black);
+  
+  h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: $madlabs-red-dark;
+  }
+  
+  .question {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    line-height: $default-line-height-1;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+  
+  .answer {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: $default-line-height-2;
+    font-family: $text-fonts;
+  }
+  
+  .qas {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* Sponsors */
+
+$first-level-height: 7rem;
+$second-level-height: 5rem;
+$third-level-height: 3.5rem;
+
+#sponsors {
+  @include common-div($medium-black);
+  .top {
+    margin-top: 1rem;
+  }
+  .sponsor-container {
+    a:focus {
+      outline: none;
+    }
+  
+    .first-level-sponsors {
+      @include level-sponsors($first-level-height);
+      margin: 2rem 0;
+    }
+
+    .second-level-sponsors {
+      @include level-sponsors($second-level-height);
+    }
+
+    .third-level-sponsors {
+      @include level-sponsors($third-level-height);
+      margin-bottom: 2rem;
+    }
+  }
+  
+  #sponsor-hubspot img {
+    padding: 2px;
+  }
+
+  #sponsor-visa img {
+    padding: 10px;
+  }
+
+  #sponsor-mutualmobile img {
+    margin-top: 14px;
+  }
+
+  #sponsor-tilt img {
+    padding: 2px;
+  }
+
+  #sponsor-microsoft img {
+    padding: 10px;
+  }
+
+  #sponsor-goldmansachs img {
+    padding: 4px;
+  }
+
+  #sponsor-yodle img {
+    padding: 1px;
+  }
+}
+
+/* What is uMAD */
+
+#what-is-umad {
+  @include common-div($medium-black);
+  
+  p {
+    @include expl-p();
+  }
+}
+
+/* Events */
+
+#events {
+  @include common-div($base-white);
+  background-image: url(../images/hero/hero-4-compressor.jpg);
+  
+  p {
+    @include expl-p();
+  }
+  p:last-child {
+    margin-bottom: 32px;
+  }
+  #live-button {
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center;
+    .btn {
+      padding: 0.55rem 1.5rem;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.icon-info-container {
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+  i.icon {
+    font-size: 6.5rem;
+  }
+  .text {
+    font-size: 1.1em;
+    line-height: $default-line-height-3;
+    font-weight: 400;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+} 
+
+/* Icon info */
+#icon-info {
+  @include common-div($base-white); 
+  background-image: url(../images/hero/hero-5-compressor.jpg);
+}
+
+#footer {
+  transition: 0.25s linear;
+  @include common-div($base-white);
+  background-color: #34383C;
+  height: auto;
+  .container {
+    padding: calc(4rem * 0.5) 2.5rem;
+  }
+  .text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: $default-line-height-2;
+    font-family: $text-fonts;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+  .icon {
+    font-size: 1.4rem;
+    margin-top: 0.25rem;
+    color: #ddd;
+    transition: 0.25s linear;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+
+#schedule {
+  * {
+    letter-spacing: 0.15px;
+    line-height: normal;
+  }
+  
+  .row {
+    margin: 2.5rem 0;
+  }
+  
+  h5 {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .speaker, .times {
+    color: #eee;
+    font-size: 1rem;
+  }
+  
+  div.description {
+    float: left;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: $gray-on-gray;
+    margin-top: 0.25rem;
+    letter-spacing: 0.20px;
+  }
+  
+  .speaker {
+    margin-top: 0.25rem;
+  }
+  .times {
+    margin-top: 0.25rem;
+  }
+  
+  .icon {
+    color:  #5a5a5a; 
+    display: none;      
+  }
+  
+  .ion-location {
+    padding: 0 0.5rem 0 0.1rem;
+  }
+  .ion-android-time {
+    padding: 0 0.5rem 0 0;
+  }
+
+  a {
+    transition: 0.25s linear;
+    &:hover {
+      color: white;
+    }
+  }
+
+  .filter-container  {
+    span {
+      padding: 8px;
+    }
+    a {
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .schedule-row {
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+
+  .active-filter-header {
+    display: inline-block;
+    height: 2em;
+    background-color: $madlabs-red-dark;
+    width: 5em;
+    border-radius: 5em;
+    color: #ffffff;
+    line-height: 1em;
+    white-space: nowrap;
+    font-weight: 700;
+    -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+    -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+    transition: color 0.2s 0.3s, width 0.3s 0s;
+    cursor: pointer;
+  }
+
+  .filter-container {
+    .wider-md {
+      width: 6.5em;
+    }
+    .wider-sm {
+      width: 5.75em;
+    }
+  }
+}
