@@ -18,3 +18,10 @@ Then run:
 $ bundle exec middleman server
 ````
 from the root of the repository.
+
+# Deploying
+
+````bash
+$ bundle exec middleman build # generates static files
+$ bundle exec middleman deploy # pushes to the `gh-pages` branch by default
+````
