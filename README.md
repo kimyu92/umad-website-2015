@@ -1,6 +1,6 @@
-# umad.github.io
+# umad-website-2015
 
-The source for the uMAD website.
+The source for the uMAD website, 2015.
 
 # Running
 
