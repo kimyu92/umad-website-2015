@@ -1,6 +1,6 @@
-# umad-website-2015
+# [umad-website-2015](http://utcsmad.github.io/umad-website-2015)
 
-The source for the uMAD website, 2015.
+The source for the uMAD website, 2015. See it [live](http://utcsmad.github.io/umad-website-2015). 
 
 # Running
 
