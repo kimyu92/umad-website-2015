@@ -1,0 +1,910 @@
+/* Colors */
+/* Font */
+/* Font sizes */
+/* Mixns */
+/* Typography helpers */
+/* line 23, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.upcase {
+  text-transform: uppercase; }
+
+/* Metal */
+/* line 29, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Lato", Arial, sans-serif;
+  letter-spacing: 0.3px;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal; }
+
+/* line 38, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+html, body {
+  height: 100%;
+  font-size: 15.2px; }
+
+/* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+/* HTML tags */
+/* line 53, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+body {
+  background: #f3f3f3;
+  margin: 0;
+  color: #eee;
+  font-size: 15.2px; }
+
+/* line 60, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #eee; }
+
+/* line 65, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+p {
+  padding: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.33; }
+
+/* Anchor tag + effects */
+/* line 74, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  -ms-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  color: #eee; }
+  /* line 80, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+  a:hover, a:focus {
+    text-decoration: none; }
+
+/* line 85, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+hr {
+  border: 1px solid #5a5a5a;
+  width: 5rem; }
+
+/* Custom element styles */
+/* line 92, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn {
+  display: inline-block;
+  padding: 0; }
+
+/* line 96, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn-large {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: 900; }
+
+/* line 119, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn-upcase {
+  text-transform: uppercase; }
+
+/* line 122, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn-clear {
+  background: transparent;
+  color: #eee !important; }
+
+/* line 126, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn:hover {
+  background: #eee;
+  color: #c02929; }
+
+/* line 130, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.btn:active, .btn:focus {
+  color: #eee !important; }
+
+/* Alignment helpers */
+/* line 136, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.centered {
+  text-align: center; }
+
+/* line 139, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  width: 100%; }
+
+/* line 148, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.wyswig {
+  text-transform: none !important; }
+
+/* line 152, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.disabled-click-temp {
+  cursor: default; }
+
+/* line 156, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+.capitalize {
+  text-transform: capitalize; }
+
+/* line 160, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+body.overflow-hidden {
+  /* used when modal is visible */
+  overflow: hidden; }
+
+/* Main Components  */
+/* line 167, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+header {
+  position: relative;
+  height: 160px;
+  line-height: 160px; }
+
+/* line 172, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+header h1 {
+  font-size: 2.4rem;
+  text-align: center; }
+
+@media only screen and (min-width: 1170px) {
+  /* line 178, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+  header {
+    height: 240px;
+    line-height: 240px; }
+
+  /* line 182, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/style.css.scss */
+  header h1 {
+    font-size: 3.2rem;
+    font-weight: 300; } }
+/* Adapted from http://codyhouse.co/gem/morphing-modal-window/ */
+/* line 4, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-section {
+  background-color: #03bb91; }
+
+/* line 8, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+  -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+  transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s; }
+
+/* line 22, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal::after {
+  /* gradient overlay at bottom of modal window */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  pointer-events: none;
+  background: transparent;
+  background: -webkit-linear-gradient(bottom, #34383c, rgba(52, 56, 60, 0));
+  background: linear-gradient(to top, #34383c, rgba(52, 56, 60, 0)); }
+
+/* line 35, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal .cd-modal-content {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; }
+
+/* line 41, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal p {
+  color: #ffffff; }
+
+/* line 45, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.modal-is-visible .cd-modal {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  -moz-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
+  transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s; }
+
+/* line 55, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.modal-is-visible .cd-modal .cd-modal-content {
+  -webkit-overflow-scrolling: touch; }
+
+/* line 59, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action {
+  position: relative; }
+
+/* line 62, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action .cd-modal-bg {
+  display: inline-block;
+  height: 4em;
+  background-color: #34383c; }
+
+/* line 67, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action .btn {
+  display: inline-block;
+  height: 2.75em;
+  background-color: #c02929;
+  width: 12.5em;
+  border-radius: 5em;
+  color: #ffffff;
+  line-height: 2.75em;
+  white-space: nowrap;
+  font-weight: 700;
+  -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s; }
+
+/* line 81, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action .btn.to-circle {
+  width: 8em;
+  color: transparent;
+  -webkit-transition: color 0.2s 0s, width 0.3s 0.2s;
+  -moz-transition: color 0.2s 0s, width 0.3s 0.2s;
+  transition: color 0.2s 0s, width 0.3s 0.2s; }
+
+/* line 88, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action .cd-modal-bg {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  width: 4em;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: translateX(-2em);
+  -moz-transform: translateX(-2em);
+  -ms-transform: translateX(-2em);
+  -o-transform: translateX(-2em);
+  transform: translateX(-2em);
+  -webkit-transition: visibility 0s 0.5s;
+  -moz-transition: visibility 0s 0.5s;
+  transition: visibility 0s 0.5s; }
+
+/* line 111, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-action .cd-modal-bg.is-visible {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 116, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.cd-modal-close {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3) url(../images/cd-icon-close-c208b1b7.svg) no-repeat center center;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s; }
+
+/* line 145, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.no-touch .cd-modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+/* line 148, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+.modal-is-visible .cd-modal-close {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+
+@media only screen and (min-width: 768px) {
+  /* line 161, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/schedule-modal.css */
+  .cd-modal-close {
+    top: 70px; } }
+/* Mixins */
+/* line 57, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+.div-heading {
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 900; }
+
+/* Hero */
+/* line 68, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#hero {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../images/hero/hero-3-compressor-444c6e8c.jpg); }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #hero .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #hero * {
+    color: #eee; }
+  /* line 71, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #hero #hero-button {
+    right: 0;
+    left: 0;
+    z-index: 2;
+    margin: auto;
+    max-width: 700px;
+    text-align: center; }
+    /* line 72, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero #hero-button .btn {
+      padding: 0.55rem 1.5rem;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      font-weight: 600; }
+  /* line 88, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #hero #umad-logo {
+    height: 140px;
+    display: inline-block;
+    margin-bottom: 1rem; }
+  /* line 93, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #hero .punchline {
+    line-height: 1.55;
+    font-size: 1.1rem;
+    text-transform: none; }
+    /* line 96, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero .punchline .heading-font {
+      font-family: "Montserrat", Arial,sans-serif; }
+    /* line 99, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero .punchline .text {
+      line-height: 1.55;
+      font-size: 1.1em;
+      line-height: 1.55;
+      font-weight: 400; }
+    /* line 106, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero .punchline.first {
+      margin-top: 1rem; }
+    /* line 109, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero .punchline.end {
+      margin-bottom: 2rem; }
+    /* line 112, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #hero .punchline.major {
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+      font-size: 2.25rem;
+      font-weight: 900;
+      line-height: 1.2;
+      text-transform: uppercase; }
+
+/* FAQ */
+/* line 125, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#faq {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq * {
+    color: #333; }
+  /* line 128, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  /* line 133, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq a {
+    color: #c02929; }
+  /* line 137, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq .question {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    line-height: 1.33;
+    font-family: "Montserrat", Arial, sans-serif; }
+  /* line 145, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq .answer {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.33;
+    font-family: "Lato", Arial, sans-serif; }
+  /* line 152, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #faq .qas {
+    padding: 0 1rem;
+    margin: 1rem 0; }
+
+/* Sponsors */
+/* line 164, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#sponsors {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors * {
+    color: #333; }
+  /* line 166, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .top {
+    margin-top: 1rem; }
+  /* line 170, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .sponsor-container a:focus {
+    outline: none; }
+  /* line 174, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .sponsor-container .first-level-sponsors {
+    height: 7rem;
+    display: table-cell;
+    margin: 1rem 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    margin: 2rem 0; }
+    /* line 12, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #sponsors .sponsor-container .first-level-sponsors img {
+      max-height: 7rem;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0; }
+  /* line 179, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .sponsor-container .second-level-sponsors {
+    height: 5rem;
+    display: table-cell;
+    margin: 1rem 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center; }
+    /* line 12, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #sponsors .sponsor-container .second-level-sponsors img {
+      max-height: 5rem;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0; }
+  /* line 183, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors .sponsor-container .third-level-sponsors {
+    height: 3.5rem;
+    display: table-cell;
+    margin: 1rem 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 2rem; }
+    /* line 12, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #sponsors .sponsor-container .third-level-sponsors img {
+      max-height: 3.5rem;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0; }
+  /* line 189, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-hubspot img {
+    padding: 2px; }
+  /* line 193, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-visa img {
+    padding: 10px; }
+  /* line 197, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-mutualmobile img {
+    margin-top: 14px; }
+  /* line 201, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-tilt img {
+    padding: 2px; }
+  /* line 205, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-microsoft img {
+    padding: 10px; }
+  /* line 209, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-goldmansachs img {
+    padding: 4px; }
+  /* line 213, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #sponsors #sponsor-yodle img {
+    padding: 1px; }
+
+/* What is uMAD */
+/* line 220, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#what-is-umad {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #what-is-umad .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #what-is-umad * {
+    color: #333; }
+  /* line 223, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #what-is-umad p {
+    padding: 0;
+    margin: 1rem 0;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.33; }
+
+/* Events */
+/* line 230, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#events {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../images/hero/hero-4-compressor-96f5dfb7.jpg); }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #events .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #events * {
+    color: #eee; }
+  /* line 234, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #events p {
+    padding: 0;
+    margin: 1rem 0;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.33; }
+  /* line 237, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #events p:last-child {
+    margin-bottom: 32px; }
+  /* line 240, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #events #live-button {
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center; }
+    /* line 247, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #events #live-button .btn {
+      padding: 0.55rem 1.5rem;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      font-weight: 600; }
+
+/* line 257, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+.icon-info-container:last-child {
+  margin-bottom: 2rem; }
+/* line 260, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+.icon-info-container i.icon {
+  font-size: 6.5rem; }
+/* line 263, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+.icon-info-container .text {
+  font-size: 1.1em;
+  line-height: 1.55;
+  font-weight: 400; }
+/* line 268, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+.icon-info-container .hidden {
+  visibility: hidden; }
+
+/* Icon info */
+/* line 274, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#icon-info {
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../images/hero/hero-5-compressor-8b344ef3.jpg); }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #icon-info .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #icon-info * {
+    color: #eee; }
+
+/* line 279, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#footer {
+  transition: 0.25s linear;
+  height: auto;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-color: #f3f3f3;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #34383C;
+  height: auto; }
+  /* line 39, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer .container {
+    padding: 4rem 4rem; }
+  /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer * {
+    color: #eee; }
+  /* line 284, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer .container {
+    padding: calc(4rem * 0.5) 2.5rem; }
+  /* line 287, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer .text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.33;
+    font-family: "Lato", Arial, sans-serif;
+    margin-bottom: 0.5rem; }
+  /* line 295, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer a:hover {
+    color: #fff; }
+  /* line 299, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #footer .icon {
+    font-size: 1.4rem;
+    margin-top: 0.25rem;
+    color: #ddd;
+    transition: 0.25s linear; }
+    /* line 304, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+    #footer .icon:hover {
+      color: #fff; }
+
+/* line 312, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule * {
+  letter-spacing: 0.15px;
+  line-height: normal; }
+/* line 317, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .row {
+  margin: 2.5rem 0; }
+/* line 321, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule h5 {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.1rem; }
+/* line 328, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .speaker, #schedule .times {
+  color: #eee;
+  font-size: 1rem; }
+/* line 333, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule div.description {
+  float: left;
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #999;
+  margin-top: 0.25rem;
+  letter-spacing: 0.20px; }
+/* line 342, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .speaker {
+  margin-top: 0.25rem; }
+/* line 345, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .times {
+  margin-top: 0.25rem; }
+/* line 349, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .icon {
+  color: #5a5a5a;
+  display: none; }
+/* line 354, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .ion-location {
+  padding: 0 0.5rem 0 0.1rem; }
+/* line 357, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .ion-android-time {
+  padding: 0 0.5rem 0 0; }
+/* line 361, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule a {
+  transition: 0.25s linear; }
+  /* line 363, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+  #schedule a:hover {
+    color: white; }
+/* line 369, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .filter-container span {
+  padding: 8px; }
+/* line 372, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .filter-container a {
+  padding: 8px;
+  cursor: pointer; }
+/* line 378, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .schedule-row {
+  transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear; }
+/* line 383, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .active-filter-header {
+  display: inline-block;
+  height: 2em;
+  background-color: #c02929;
+  width: 5em;
+  border-radius: 5em;
+  color: #ffffff;
+  line-height: 1em;
+  white-space: nowrap;
+  font-weight: 700;
+  -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
+  -moz-transition: color 0.2s 0.3s, width 0.3s 0s;
+  transition: color 0.2s 0.3s, width 0.3s 0s;
+  cursor: pointer; }
+/* line 400, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .filter-container .wider-md {
+  width: 6.5em; }
+/* line 403, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/divs.css.scss */
+#schedule .filter-container .wider-sm {
+  width: 5.75em; }
+
+@media screen and (max-width: 768px) {
+  /* line 4, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  html {
+    zoom: 100%; }
+
+  /* line 7, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .div-heading {
+    font-size: 1.75rem; }
+
+  /* line 10, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .sm-centered {
+    clear: both; }
+
+  /* line 13, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .mobile-display {
+    display: block !important; }
+
+  /* line 16, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .desktop-display {
+    display: none !important; }
+
+  /* line 19, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .container {
+    padding: calc(3rem) calc(1.5rem) !important; }
+
+  /* line 22, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #faq {
+    /* Specific adjustments, not scales */ }
+    /* line 23, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .container {
+      padding: calc(3rem) calc(1.5rem) !important; }
+    /* line 26, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq h5 {
+      margin-top: 0rem;
+      margin-bottom: 0.15rem; }
+    /* line 31, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .question {
+      font-size: 1.2rem; }
+    /* line 34, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .answer {
+      font-size: 1.1rem; }
+    /* line 37, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .qas-s {
+      margin-top: 1rem; }
+    /* line 40, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .qas {
+      margin: 2rem 0; }
+    /* line 43, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .qas-middle-e {
+      margin-top: 1rem; }
+    /* line 46, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .qas-middle-s {
+      margin-bottom: 1rem; }
+    /* line 49, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+    #faq .qas-e {
+      margin-bottom: 1rem; }
+
+  /* line 53, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .icon-info-container {
+    padding: 0; } }
+@media screen and (max-width: 480px) {
+  /* line 59, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  html {
+    font-size: 15px; }
+
+  /* line 62, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .container {
+    padding: calc(3rem) calc(1.5rem) !important; }
+
+  /* line 65, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .btn {
+    font-size: 1.1rem; }
+
+  /* line 69, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #footer .container {
+    padding: calc(4rem * 0.5) 1.25rem; }
+  /* line 72, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #footer .text {
+    margin-bottom: 0.75rem; }
+  /* line 75, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #footer .icon {
+    font-size: 1.5rem; }
+
+  /* line 81, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #hero .punchline.first {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; }
+  /* line 85, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #hero .punchline.major {
+    font-size: 1.75rem; }
+
+  /* line 91, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  .icon-info-container i.icon {
+    font-size: 5.5rem; }
+
+  /* line 98, /Users/nishanthshanmugham/Development/umad-website-2015/source/stylesheets/responsive.css.scss */
+  #schedule .filter-container a {
+    margin-top: 8px;
+    margin-bottom: 8px; } }
