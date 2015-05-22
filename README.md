@@ -2,6 +2,8 @@
 
 The source for the uMAD website, 2015. See it [live](http://utcsmad.github.io/umad-website-2015). 
 
+[![Screenshot](http://i.imgur.com/phV5U7p.jpg)](http://utcsmad.github.io/umad-website-2015)
+
 # Running
 
 Clone the repository and install [Middleman](https://middlemanapp.com)
