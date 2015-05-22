@@ -4,9 +4,17 @@ The source for the uMAD website, 2015.
 
 # Running
 
-Clone the repository, install [Middleman](https://middlemanapp.com), and run:
+Clone the repository and install [Middleman](https://middlemanapp.com)
+
+Install any missing gems:
 
 ````bash
-$ middleman server
+$ bundle install
+````
+
+Then run:
+
+````bash
+$ bundle exec middleman server
 ````
 from the root of the repository.
